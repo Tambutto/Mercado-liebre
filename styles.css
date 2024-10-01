@@ -1,0 +1,84 @@
+
+@import url('register.css');
+@import url('login.css');
+
+
+/* ESTILOS GENERAL */
+
+header {
+  background-color: #eac926;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+.img {
+  width: 24vh;
+  margin: 5vw;
+}
+
+.buscador {
+  margin-left: 4vw;
+}
+
+li {
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.titular {
+  font-size: 24px;
+}
+
+p {
+  font-size: 12px;
+}
+
+.precio {
+  font-size: 18px;
+}
+
+.descuento {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+.iconos {
+  color: #1259c3;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.burger-menu {
+  background-color: #1259c3;
+  width: 6%;
+  padding: 1.5%;
+  margin: auto;
+  margin-top: 4vh;
+  border-radius: 4px;
+  margin-bottom: 4vh;
+}
+
+.burger-menu i{
+  color: #ebebeb;
+  padding: 4px;
+}
+
+h3 {
+  color: #666;
+}
+
+footer div p {
+  color: #ebebeb;
+  font-size: 16px;
+}
+
+.pie {
+  text-align: center;
+  margin-top: 8vh;
+}
