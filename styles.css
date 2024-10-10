@@ -7,31 +7,56 @@
 
 * {
   margin:0;
-  max-width: 90vw;
+  box-sizing: content-box;
   font-family: "Roboto", sans-serif;
 }
 
 header {
   background-color: #eac926;
+  max-width: 90vw;
+  padding-bottom: 1px;
+}
+
+.container .comprar {
+  color:#000000;
+  text-align: center;
   
 }
 
-.comprar {
-  color:#000000;
-}
-
-.nav_ul {
+.nav-ul {
   display: none;
 }
 
+
+.container {
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap ;
+  align-items: center;
+  justify-content: space-around;
+
+}
 
 .img {
   width: 24vh;
   margin: 5vw;
 }
 
-.buscador {
-  margin-left: 4vw;
+  header h4{
+  color:#000000;
+}
+
+.nav {
+  display: none;
+}
+
+ .container input {
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  width: 30vw;
+  
 }
 
 li {
@@ -41,29 +66,35 @@ li {
 li a {
   text-decoration: none;
   color: #000000;
+  font-weight: bold;
 }
 
 .titular {
   font-size: 24px;
   color:#666;
   margin-left: 5vw;
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
+  
 }
+
 
 p {
   font-size: 16px;
 }
 
-.camion{
+ .camion{
   position: relative;
+  bottom: 15px;
+  left: 260px;
+  
   width: 30px;
   height: 30px;
   border: 1px solid #39b54a;
   border-radius: 50px;
-  margin-top: 2vh;
   margin-left: 3vh;
-  
+ 
 }
+
 
 
 .fa-truck-field{
@@ -71,12 +102,18 @@ p {
   left: 6px;
   top: 6px;
   color:#39b54a;
+  
 }
 
+.pre-desc {
+  display: flex;
+}
 
 .precio {
   font-size: 18px;
   margin-left: 5vw;
+  display: flex;
+  flex-grow: .30;
   
 }
 
@@ -84,24 +121,31 @@ p {
   font-size: 16px;
   color:  #39b54a;
   margin-left: 5vw;
-   
+  display: flex;
+  flex-grow: .70; 
 }
+
+header h4 {
+  text-align: center;
+} 
 
 h4 {
   font-size: 16px;
   margin-left: 5vw;
-  margin-top: 1vh;
+  margin-top: 2vh;
   margin-bottom: 2vh;
   color: #666;
   
 }
 
-article .precio_descuento{
+.precio-descuento{
   
   width: 90%;
   margin:auto;
   background-color: white;
   border: solid 1px #ebebeb;
+  
+  
 }
 
 .iconos {
@@ -111,6 +155,7 @@ article .precio_descuento{
 }
 
 .burger-menu {
+ 
   background-color: #1259c3;
   width: 6%;
   padding: 1.5%;
@@ -121,17 +166,17 @@ article .precio_descuento{
 }
 
 .burger-menu i{
+  display: block;
+  margin: auto;
   color: #ebebeb;
   padding: 4px;
 }
 
-.img_banner{
-  display: block;
-  margin: auto;
-  width: 90vw;
-  height: 30vh;
-  
+.img-banner {
+  display: none;
 }
+
+
 
 h3 {
   color: #666;
@@ -147,11 +192,20 @@ footer div p {
   margin-top: 8vh;
 }
 
-.main {
-  background-color:#ebebeb;
+.pie p {  
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  
 }
 
-.img_art{
+.main {
+  background-color:#ebebeb;
+  max-width: 90vw;
+
+}
+
+.img-art{
   display: block;
   margin: auto;
   margin-top: 1px;
@@ -162,45 +216,201 @@ footer div p {
   
 }
 
-article h4 {
-  display: none;
-}
 
 
 /* MEDIA QUERIES TABLET */
 
 @media (min-width:768px){
-  .nav_ul {
-    display: inline-block;
-    margin-bottom: 3vh;
-     }
 
-  .burger-menu {
-    display:none;
+.container{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content:space-around;
+}
+
+.img {
+    width: 30vh;
+    margin: 3vw;
+  }
+
+div .buscador{
+  width: 15vw;
+  
+}
+
+.container h4{
+  font-size: 12px;
+  text-align: start;
+}
+
+  .nav {
+    display: flex;
+    justify-content:space-around;
+  }
+
+  .nav-ul {
+    display: flex;
+    margin-bottom: 3vh;
+ 
+     }  
+     
+   .nav-ul li {
+    margin: 8px;
+    font-size: 12px;
+   }  
+
+    .burger-menu {
+      display:none;
     
   }  
 
-  article h4 {
-    display: inline;
+  .img-banner{
+    display: block;
+    margin: auto;
+    width: 90vw;
+    height: 30vh;
+    padding: px;
+   
+       
   }
 
-  * {
+  .container-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    margin: 0 auto;
+    justify-content: center;
+  }
+  
+  .caja .img-art{
+    width: 40vw;
+    height: 50vh;
+    margin: 5px;
+  }
+
+  .img-art {
+    transition: box-shadow 0.3s ease;
+  }
+
+ .img-art:hover {
    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   
+ }
+
+
+
+  /* .precio-descuento{
+  
+    width: 40vw;
+    height: 10vh;
+
+    margin:auto;
+    background-color: white;
+    border: solid 1px #ebebeb; */
+
+
+  /* .img-art {
+   box-shadow: 0px 0px 10px rgb(100, 100, 100);
+ } */
+
+ .camion{
+  /* position: relative; */
+  bottom: 15px;
+  left: 230px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #39b54a;
+  border-radius: 50px;
+  margin-left: 3vh;
  
 }
+
+div .precio-descuento{
+  width: 40vw;
 }
+
+.precio {
+  font-size: 18px;
+  margin-left: 5vw;
+  display: flex;
+  
+}
+
+}
+
+
 
 /* MEDIA QUERIES DESKTOP */
 
 @media (min-width:1024px){
 
+
+  .container input{
+    width: 20vw;
+  }
+
+  .container h4{
+    font-size: 16px;
+    text-align: start;
+  }
+
   .burger-menu {
     display:none;
-    
-  }  
+      }  
 
-  * {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  .nav-ul li {
+    margin: 8px;
+    font-size: 16px;
+   }  
   
- }
+
+  .container-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+      
+  } 
+
+  .caja .img-art{
+    width: 20vw;
+    height: 35vh;
+    margin: 3px;
+  }
+
+
+   .caja {
+    width: 21vw;
+  } 
+  
+  .precio-descuento {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 10vh;
+    margin: 2px;
+  }
+  
+  div .precio-descuento {
+    width: 20vw;
 }
+
+
+  h4 {
+    
+    font-size: 14px;
+    margin-right:1vw;
+    text-align: center;
+    margin-bottom: 2vh;
+    color: #666;
+    
+  }
+
+  .precio {
+    font-size: 14px;
+    margin-left: 1vw;
+    /* display: flex; */
+    
+  }
+
+}
+  
