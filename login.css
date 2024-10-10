@@ -1,0 +1,53 @@
+/* ESTILOS LOGIN */
+
+
+.burger-menu {
+  background-color: #1259c3;
+  width: 6%;
+  padding: 1.5%;
+  margin: auto;
+  margin-top: 4vh;
+  border-radius: 4px;
+  margin-bottom: 4vh;
+}
+
+.burger-menu i{
+  color: #ebebeb;
+  padding: 4px;
+}
+
+.login {
+    background-color: #ebebeb;
+    padding: 2vw;
+    /* margin:auto; */
+    font-family: "Roboto", sans-serif;
+  }
+
+  form.login {
+    width: 86vw;
+  }
+  
+  .field {
+    width: 80vw;
+    padding: 2vh;
+    margin-bottom: 8vh;
+    border-radius: 5px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .enviar {
+    display: block;
+    background-color: #1259c3;
+    color: #ebebeb;  
+    padding: 2vh;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;  
+    
+  }
+
+  .footer {
+    width: 90vw;
+  }
+ 

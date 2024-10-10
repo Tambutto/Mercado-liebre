@@ -1,0 +1,207 @@
+
+
+@import url('register.css');
+@import url('login.css');
+
+
+/* ESTILOS GENERAL */
+
+* {
+  margin:0;
+  max-width: 90vw;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #eac926;
+  
+}
+
+.comprar {
+  color:#000000;
+}
+
+.nav_ul {
+  display: none;
+}
+
+
+.img {
+  width: 24vh;
+  margin: 5vw;
+}
+
+.buscador {
+  margin-left: 4vw;
+}
+
+li {
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.titular {
+  font-size: 24px;
+  color:#666;
+  margin-left: 5vw;
+  margin-bottom: 1vh;
+}
+
+p {
+  font-size: 16px;
+}
+
+.camion{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  border-radius: 50px;
+  margin-top: 2vh;
+  margin-left: 3vh;
+  
+}
+
+
+.fa-truck-field{
+  position:absolute;
+  left: 6px;
+  top: 6px;
+  color:#39b54a;
+}
+
+
+.precio {
+  font-size: 18px;
+  margin-left: 5vw;
+  
+}
+
+.descuento {
+  font-size: 16px;
+  color:  #39b54a;
+  margin-left: 5vw;
+   
+}
+
+h4 {
+  font-size: 16px;
+  margin-left: 5vw;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  color: #666;
+  
+}
+
+article .precio_descuento{
+  
+  width: 90%;
+  margin:auto;
+  background-color: white;
+  border: solid 1px #ebebeb;
+}
+
+.iconos {
+  color: #1259c3;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.burger-menu {
+  background-color: #1259c3;
+  width: 6%;
+  padding: 1.5%;
+  margin: auto;
+  margin-top: 4vh;
+  border-radius: 4px;
+  margin-bottom: 4vh;
+}
+
+.burger-menu i{
+  color: #ebebeb;
+  padding: 4px;
+}
+
+.img_banner{
+  display: block;
+  margin: auto;
+  width: 90vw;
+  height: 30vh;
+  
+}
+
+h3 {
+  color: #666;
+}
+
+footer div p {
+  color: #ebebeb;
+  font-size: 16px;
+}
+
+.pie {
+  text-align: center;
+  margin-top: 8vh;
+}
+
+.main {
+  background-color:#ebebeb;
+}
+
+.img_art{
+  display: block;
+  margin: auto;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  width: 90%;
+  height: 50%;
+  border-top: solid 1px #ebebeb;
+  
+}
+
+article h4 {
+  display: none;
+}
+
+
+/* MEDIA QUERIES TABLET */
+
+@media (min-width:768px){
+  .nav_ul {
+    display: inline-block;
+    margin-bottom: 3vh;
+     }
+
+  .burger-menu {
+    display:none;
+    
+  }  
+
+  article h4 {
+    display: inline;
+  }
+
+  * {
+   box-shadow: 0px 0px 10px rgb(100, 100, 100);
+ 
+}
+}
+
+/* MEDIA QUERIES DESKTOP */
+
+@media (min-width:1024px){
+
+  .burger-menu {
+    display:none;
+    
+  }  
+
+  * {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  
+ }
+}
